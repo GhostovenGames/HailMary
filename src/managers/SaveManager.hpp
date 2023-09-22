@@ -5,14 +5,12 @@
 #ifndef TREFUSISENGINE_SAVEMANAGER_H
 #define TREFUSISENGINE_SAVEMANAGER_H
 
-
-#include "GameManager.h"
+#include "GameManager.hpp"
 
 class SaveManager {
-public:
+  public:
     GameManager loadGame(std::string fileName);
     void saveGame(std::string fileName, GameManager gameManager);
 };
 
-
-#endif //TREFUSISENGINE_SAVEMANAGER_H
+#endif // TREFUSISENGINE_SAVEMANAGER_H

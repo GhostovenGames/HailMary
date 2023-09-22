@@ -2,11 +2,11 @@
 // Created by elsa on 21.04.2020.
 //
 
-#include "ScriptManager.h"
+#include "ScriptManager.hpp"
 #ifdef DEBUG
 #include <iostream>
 #endif
-#include "../trefusisInternals/TrefusisConfig.h"
+#include "../trefusisInternals/TrefusisConfig.hpp"
 
 ScriptManager::ScriptManager() {
     PyImport_AppendInittab("harlequin", &PyInit_harlequin);
@@ -15,7 +15,7 @@ ScriptManager::ScriptManager() {
 }
 
 void ScriptManager::loadScript(std::string mapName) {
-    PyObject* pName, *pFunc;
+    PyObject *pName, *pFunc;
 #ifdef DEBUG
     std::cout << "DEBUG: Importing " << mapName << " from " << TrefusisConfig::scriptFile << "\n";
 #endif
@@ -38,6 +38,4 @@ void ScriptManager::loadScript(std::string mapName) {
     Py_DECREF(pFunc);
 }
 
-ScriptManager::~ScriptManager() {
-    Py_DECREF(pModule);
-}
+ScriptManager::~ScriptManager() { Py_DECREF(pModule); }

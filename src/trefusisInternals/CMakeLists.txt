@@ -1,2 +1,2 @@
-set(internals_SOURCES TrefusisConfig.cpp TrefusisConfig.h RandomNumberGenerator.cpp RandomNumberGenerator.h)
+set(internals_SOURCES TrefusisConfig.cpp TrefusisConfig.hpp RandomNumberGenerator.cpp RandomNumberGenerator.hpp)
 add_library(internals ${internals_SOURCES})

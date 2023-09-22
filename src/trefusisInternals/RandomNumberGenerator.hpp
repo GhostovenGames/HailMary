@@ -15,17 +15,17 @@ struct GradientVector {
 /**
  * Take the dot product of two vectors.
  */
-float dotProduct(GradientVector* vec1, GradientVector* vec2);
+float dotProduct(GradientVector *vec1, GradientVector *vec2);
 
 class RandomNumberGenerator {
-private:
-    static RandomNumberGenerator* rng;
+  private:
+    static RandomNumberGenerator *rng;
     /**
      * Initialise a RandomNumberGenerator instance.
      */
     RandomNumberGenerator();
 
-public:
+  public:
     /**
      * Generate a random number between 0 and 1.
      * @return the generated random number.
@@ -45,5 +45,4 @@ public:
     static std::vector<std::vector<float>> generatePerlinNoise();
 };
 
-
-#endif //TREFUSISENGINE_RANDOMNUMBERGENERATOR_H
+#endif // TREFUSISENGINE_RANDOMNUMBERGENERATOR_H

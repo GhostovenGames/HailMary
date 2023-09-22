@@ -5,13 +5,11 @@
 #ifndef TREFUSISENGINE_TREFUSISCONFIG_H
 #define TREFUSISENGINE_TREFUSISCONFIG_H
 
-
 #include <string>
 #include <vector>
 
 class TrefusisConfig {
-public:
-
+  public:
     // Config
     static std::string configFile;
     static std::string prefix;
@@ -28,17 +26,15 @@ public:
     static std::string engineSplash;
     static std::string spritesheet;
 
-
     // Graphic Geometry
     static const int deltaTime = 0;
     static const int tileSize = 64;
     static const int screenWidth = 640;
     static const int screenHeight = 480;
 
-    //Time
+    // Time
     static const int dayLength = 150;
     static const int seasonLength = 45000;
-
 
     static bool isInitialised;
     /**
@@ -49,5 +45,4 @@ public:
     static bool initConfig(std::string fileName);
 };
 
-
-#endif //TREFUSISENGINE_TREFUSISCONFIG_H
+#endif // TREFUSISENGINE_TREFUSISCONFIG_H

@@ -2,12 +2,9 @@
 
 std::queue<Dialog> DialogManager::dialogs;
 bool DialogManager::isInitialised = false;
-DialogManager* DialogManager::instance = nullptr;
+DialogManager *DialogManager::instance = nullptr;
 
-
-DialogManager::DialogManager () {
-
-}
+DialogManager::DialogManager() {}
 
 void DialogManager::InitialiseIfNotAlready() {
     if (isInitialised == false) {

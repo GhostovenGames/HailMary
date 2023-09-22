@@ -5,13 +5,11 @@
 #ifndef TREFUSISENGINE_PLAYER_H
 #define TREFUSISENGINE_PLAYER_H
 
-
-#include "Character.h"
+#include "Character.hpp"
 
 class Player : public Character {
-public:
+  public:
     Player() : Character(0.05, 100) {}
 };
 
-
-#endif //TREFUSISENGINE_PLAYER_H
+#endif // TREFUSISENGINE_PLAYER_H

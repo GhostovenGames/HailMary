@@ -3,8 +3,8 @@
 //
 
 #include "harlequin/DialogManager.hpp"
-#include "managers/GameManager.h"
-#include "trefusisInternals/TrefusisConfig.h"
+#include "managers/GameManager.hpp"
+#include "trefusisInternals/TrefusisConfig.hpp"
 #include <iostream>
 #include <stdio.h>
 

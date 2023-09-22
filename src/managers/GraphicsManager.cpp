@@ -2,13 +2,13 @@
 // Created by elsa on 13.04.2020.
 //
 
-#include "GraphicsManager.h"
-#include "../trefusisInternals/TrefusisConfig.h"
-#include "Level.h"
+#include "GraphicsManager.hpp"
+#include "../trefusisInternals/TrefusisConfig.hpp"
+#include "Level.hpp"
 #include "SDL.h"
 #include "SDL_image.h"
 #include "SDL_ttf.h"
-#include "TimeManager.h"
+#include "TimeManager.hpp"
 #include <SDL_error.h>
 #include <SDL_render.h>
 #include <SDL_surface.h>

@@ -6,8 +6,8 @@
 #define TREFUSISENGINE_GRAPHICSMANAGER_H
 
 #include "../harlequin/DialogManager.hpp"
-#include "../objects/Player.h"
-#include "Level.h"
+#include "../objects/Player.hpp"
+#include "Level.hpp"
 #include "SDL.h"
 #include <SDL_surface.h>
 #include <cmath>

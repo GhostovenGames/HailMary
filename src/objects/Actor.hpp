@@ -5,16 +5,14 @@
 #ifndef TREFUSISENGINE_ACTOR_H
 #define TREFUSISENGINE_ACTOR_H
 
-
 #include "SDL.h"
 
 class Actor {
-public:
+  public:
     int x;
     int y;
     int objid;
     virtual SDL_Rect getTexture() = 0;
 };
 
-
-#endif //TREFUSISENGINE_ACTOR_H
+#endif // TREFUSISENGINE_ACTOR_H

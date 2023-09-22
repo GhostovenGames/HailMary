@@ -5,9 +5,8 @@
 #ifndef TREFUSISENGINE_MUSICMANAGER_H
 #define TREFUSISENGINE_MUSICMANAGER_H
 
-
-#include <vector>
 #include <string>
+#include <vector>
 
 struct Music {
     std::string fileName;
@@ -15,17 +14,18 @@ struct Music {
 };
 
 class MusicManager {
-private:
-    std::vector<Music> musicQueue;  // For the scripting engine.
-    std::vector<Music> zoneMusic;  // For ordinary zone files.
-    std::vector<std::vector<Music>> levelMusic;  // For ordinary zone files.
+  private:
+    std::vector<Music> musicQueue;              // For the scripting engine.
+    std::vector<Music> zoneMusic;               // For ordinary zone files.
+    std::vector<std::vector<Music>> levelMusic; // For ordinary zone files.
     Music playingRightNow;
     /**
      * Resize the level matrix if cannot fit integer amount of items.
      * @param resizeToFit Resize to this integer size.
      */
     inline void checkLevelVectorSize(int resizeToFit);
-public:
+
+  public:
     /**
      * Add a music to the music queue.
      * @return
@@ -40,5 +40,4 @@ public:
     bool importLevel(std::string levelName);
 };
 
-
-#endif //TREFUSISENGINE_MUSICMANAGER_H
+#endif // TREFUSISENGINE_MUSICMANAGER_H

@@ -6,11 +6,11 @@
 #define TREFUSISENGINE_GAMEMANAGER_H
 
 #include "../harlequin/DialogManager.hpp"
-#include "../harlequin/ScriptManager.h"
-#include "../objects/Character.h"
-#include "../objects/Player.h"
-#include "GraphicsManager.h"
-#include "TimeManager.h"
+#include "../harlequin/ScriptManager.hpp"
+#include "../objects/Character.hpp"
+#include "../objects/Player.hpp"
+#include "GraphicsManager.hpp"
+#include "TimeManager.hpp"
 #include <string>
 #include <vector>
 /**

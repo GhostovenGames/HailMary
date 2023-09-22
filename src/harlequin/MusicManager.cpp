@@ -2,8 +2,8 @@
 // Created by elsa on 19.04.2020.
 //
 
-#include "MusicManager.h"
-#include "../trefusisInternals/TrefusisConfig.h"
+#include "MusicManager.hpp"
+#include "../trefusisInternals/TrefusisConfig.hpp"
 #include <filesystem>
 
 /**
@@ -43,12 +43,12 @@ void inline MusicManager::checkLevelVectorSize(int resizeToFit) {
 }
 
 bool MusicManager::importLevel(std::string levelName) {
-    for (const auto & entry : std::filesystem::directory_iterator(TrefusisConfig::musicsDirectory)) {
+    for (const auto &entry : std::filesystem::directory_iterator(TrefusisConfig::musicsDirectory)) {
         if (isLevelMusicFile(levelName, entry)) {
             std::string fileName = entry.path().string();
             int zoneIndex = getZoneNumber(fileName);
             this->checkLevelVectorSize(zoneIndex);
-            this->levelMusic[zoneIndex].push_back(Music {fileName, false});
+            this->levelMusic[zoneIndex].push_back(Music{fileName, false});
         }
     }
 }

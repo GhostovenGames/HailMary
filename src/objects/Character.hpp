@@ -5,12 +5,12 @@
 #ifndef TREFUSISENGINE_CHARACTER_H
 #define TREFUSISENGINE_CHARACTER_H
 
-
 class Character {
-private:
+  private:
     float baseHealth;
     float baseSpeed;
-public:
+
+  public:
     float x;
     float y;
     void track(Character other);
@@ -18,5 +18,4 @@ public:
     Character(float baseSpeed, float baseHealth);
 };
 
-
-#endif //TREFUSISENGINE_CHARACTER_H
+#endif // TREFUSISENGINE_CHARACTER_H

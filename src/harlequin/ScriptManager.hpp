@@ -4,17 +4,16 @@
 
 #ifndef TREFUSISENGINE_SCRIPTMANAGER_H
 #define TREFUSISENGINE_SCRIPTMANAGER_H
+#include "harlequin_api.hpp"
 #include <Python.h>
-#include <string>
 #include <iostream>
-#include "harlequin_api.h"
+#include <string>
 
-class ScriptManager
-{
-private:
+class ScriptManager {
+  private:
     PyObject *pModule;
 
-public:
+  public:
     ScriptManager();
     ~ScriptManager();
     void loadScript(std::string fileName);

@@ -2,10 +2,10 @@
 // Created by elsa on 13.04.2020.
 //
 
-#include "GameManager.h"
-#include "../objects/Character.h"
-#include "../trefusisInternals/TrefusisConfig.h"
-#include "Level.h"
+#include "GameManager.hpp"
+#include "../objects/Character.hpp"
+#include "../trefusisInternals/TrefusisConfig.hpp"
+#include "Level.hpp"
 #include <iostream>
 
 GameManager *GameManager::game = nullptr;
