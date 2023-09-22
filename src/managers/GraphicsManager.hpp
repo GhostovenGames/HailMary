@@ -2,8 +2,8 @@
 // Created by elsa on 13.04.2020.
 //
 
-#ifndef TREFUSISENGINE_GRAPHICSMANAGER_H
-#define TREFUSISENGINE_GRAPHICSMANAGER_H
+#ifndef TREFUSISENGINE_GRAPHICSMANAGER_HPP
+#define TREFUSISENGINE_GRAPHICSMANAGER_HPP
 
 #include "../harlequin/DialogManager.hpp"
 #include "../objects/Player.hpp"
@@ -144,4 +144,4 @@ class GraphicsManager {
     void close();
 };
 
-#endif // TREFUSISENGINE_GRAPHICSMANAGER_H
+#endif // TREFUSISENGINE_GRAPHICSMANAGER_HPP

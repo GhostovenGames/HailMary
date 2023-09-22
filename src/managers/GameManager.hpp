@@ -2,8 +2,8 @@
 // Created by elsa on 13.04.2020.
 //
 
-#ifndef TREFUSISENGINE_GAMEMANAGER_H
-#define TREFUSISENGINE_GAMEMANAGER_H
+#ifndef TREFUSISENGINE_GAMEMANAGER_HPP
+#define TREFUSISENGINE_GAMEMANAGER_HPP
 
 #include "../harlequin/DialogManager.hpp"
 #include "../harlequin/ScriptManager.hpp"
@@ -89,4 +89,4 @@ class GameManager {
     void close();
 };
 
-#endif // TREFUSISENGINE_GAMEMANAGER_H
+#endif // TREFUSISENGINE_GAMEMANAGER_HPP

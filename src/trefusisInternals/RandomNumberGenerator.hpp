@@ -2,8 +2,8 @@
 // Created by elsa on 16.04.2020.
 //
 
-#ifndef TREFUSISENGINE_RANDOMNUMBERGENERATOR_H
-#define TREFUSISENGINE_RANDOMNUMBERGENERATOR_H
+#ifndef TREFUSISENGINE_RANDOMNUMBERGENERATOR_HPP
+#define TREFUSISENGINE_RANDOMNUMBERGENERATOR_HPP
 
 #include <vector>
 
@@ -45,4 +45,4 @@ class RandomNumberGenerator {
     static std::vector<std::vector<float>> generatePerlinNoise();
 };
 
-#endif // TREFUSISENGINE_RANDOMNUMBERGENERATOR_H
+#endif // TREFUSISENGINE_RANDOMNUMBERGENERATOR_HPP

@@ -2,8 +2,8 @@
 // Created by elsa on 13.04.2020.
 //
 
-#ifndef TREFUSISENGINE_SAVEMANAGER_H
-#define TREFUSISENGINE_SAVEMANAGER_H
+#ifndef TREFUSISENGINE_SAVEMANAGER_HPP
+#define TREFUSISENGINE_SAVEMANAGER_HPP
 
 #include "GameManager.hpp"
 
@@ -13,4 +13,4 @@ class SaveManager {
     void saveGame(std::string fileName, GameManager gameManager);
 };
 
-#endif // TREFUSISENGINE_SAVEMANAGER_H
+#endif // TREFUSISENGINE_SAVEMANAGER_HPP

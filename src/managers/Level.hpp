@@ -2,8 +2,8 @@
 // Created by elsa on 14.04.2020.
 //
 
-#ifndef TREFUSISENGINE_LEVEL_H
-#define TREFUSISENGINE_LEVEL_H
+#ifndef TREFUSISENGINE_LEVEL_HPP
+#define TREFUSISENGINE_LEVEL_HPP
 
 #include <iostream>
 #include <string>
@@ -132,4 +132,4 @@ class Level {
     static void changeLevel(int levelIndex);
 };
 
-#endif // TREFUSISENGINE_LEVEL_H
+#endif // TREFUSISENGINE_LEVEL_HPP

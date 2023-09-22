@@ -2,8 +2,8 @@
 // Created by elsa on 19.04.2020.
 //
 
-#ifndef TREFUSISENGINE_MUSICMANAGER_H
-#define TREFUSISENGINE_MUSICMANAGER_H
+#ifndef TREFUSISENGINE_MUSICMANAGER_HPP
+#define TREFUSISENGINE_MUSICMANAGER_HPP
 
 #include <string>
 #include <vector>
@@ -40,4 +40,4 @@ class MusicManager {
     bool importLevel(std::string levelName);
 };
 
-#endif // TREFUSISENGINE_MUSICMANAGER_H
+#endif // TREFUSISENGINE_MUSICMANAGER_HPP

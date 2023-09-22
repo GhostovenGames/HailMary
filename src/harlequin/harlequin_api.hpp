@@ -1,5 +1,5 @@
-#ifndef TREFUSISENGINE_HARLEQUIN_H
-#define TREFUSISENGINE_HARLEQUIN_H
+#ifndef TREFUSISENGINE_HARLEQUIN_HPP
+#define TREFUSISENGINE_HARLEQUIN_HPP
 
 #include "DialogManager.hpp"
 #include <Python.h>

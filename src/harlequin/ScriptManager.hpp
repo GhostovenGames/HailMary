@@ -2,8 +2,8 @@
 // Created by elsa on 21.04.2020.
 //
 
-#ifndef TREFUSISENGINE_SCRIPTMANAGER_H
-#define TREFUSISENGINE_SCRIPTMANAGER_H
+#ifndef TREFUSISENGINE_SCRIPTMANAGER_HPP
+#define TREFUSISENGINE_SCRIPTMANAGER_HPP
 #include "harlequin_api.hpp"
 #include <Python.h>
 #include <iostream>
@@ -19,4 +19,4 @@ class ScriptManager {
     void loadScript(std::string fileName);
 };
 
-#endif // TREFUSISENGINE_SCRIPTMANAGER_H
+#endif // TREFUSISENGINE_SCRIPTMANAGER_HPP

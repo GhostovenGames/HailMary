@@ -1,7 +1,7 @@
 #ifndef TREFUSISENGINE_DIALOGMANAGER_HPP
 #define TREFUSISENGINE_DIALOGMANAGER_HPP
 
-#include <queue> 
+#include <queue>
 #include <string>
 
 struct Dialog {
@@ -9,15 +9,15 @@ struct Dialog {
     std::string text;
 };
 
-class DialogManager
-{
-private:
+class DialogManager {
+  private:
     static std::queue<Dialog> dialogs;
-    static DialogManager* instance;
+    static DialogManager *instance;
     static bool isInitialised;
     static void InitialiseIfNotAlready();
     DialogManager();
-public:
+
+  public:
     /**
      * Add a dialog to the dialog queue.
      * @param dialog dialog object conteining the dialog.
@@ -34,5 +34,4 @@ public:
     static bool hasNextDialog();
 };
 
-
-#endif
+#endif // TREFUSISENGINE_DIALOGMANAGER_HPP
