@@ -16,21 +16,7 @@
 #include <unordered_map>
 
 SDL_Texture *GraphicsManager::drawToScreen(std::string filePath, bool fadeIn) {
-    SDL_Texture *newTexture;
-    SDL_Surface *loadSurface = IMG_Load(filePath.c_str());
-    if (loadSurface == NULL) {
-        printf("Unable to load the image %s, ERROR: %s", filePath.c_str(), (const char *)IMG_GetError);
-    }
-    newTexture = SDL_CreateTextureFromSurface(this->gameRenderer, loadSurface);
-    if (fadeIn) {
-        for (int i = 233; i < 255; i++) {
-            SDL_SetTextureAlphaMod(newTexture, i); // Does not work.
-        }
-    }
-    if (newTexture == NULL) {
-        printf("Error with loading texture file.");
-    }
-    SDL_FreeSurface(loadSurface);
+    SDL_Texture *newTexture = this->getTextureFromFile(filePath);
     SDL_RenderClear(this->gameRenderer);
     // Render texture to screen
     SDL_RenderCopy(this->gameRenderer, newTexture, NULL, NULL);

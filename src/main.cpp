@@ -2,17 +2,16 @@
 // Created by elsa on 12.04.2020.
 //
 
-#include <stdio.h>
-#include <iostream>
+#include "harlequin/DialogManager.hpp"
 #include "managers/GameManager.h"
 #include "trefusisInternals/TrefusisConfig.h"
-#include "harlequin/DialogManager.hpp"
+#include <iostream>
+#include <stdio.h>
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
-int main(int argc, char *args[])
-{
+int main(int argc, char *args[]) {
 #ifdef DEBUG
     bool fileFound = TrefusisConfig::initConfig("../trefusis.conf");
 #else
@@ -20,11 +19,14 @@ int main(int argc, char *args[])
 #endif
     std::cout << fileFound;
 #ifdef DEBUG
-    std::cout << TrefusisConfig::configFile << "Maps directory: " << TrefusisConfig::mapsDirectory << " List of maps: \n";
+    std::cout << TrefusisConfig::configFile << "Maps directory: " << TrefusisConfig::mapsDirectory
+              << " List of maps: \n";
 #endif
     GameManager gm = GameManager::getInstance();
-    while (!gm.quit)
-    {
+#ifndef DEBUG
+    gm.showSplashScreen();
+#endif
+    while (!gm.quit) {
         SDL_Delay(TrefusisConfig::deltaTime);
         gm.Update();
     }

@@ -5,20 +5,19 @@
 #ifndef TREFUSISENGINE_GAMEMANAGER_H
 #define TREFUSISENGINE_GAMEMANAGER_H
 
-#include <vector>
-#include <string>
-#include "../objects/Character.h"
-#include "TimeManager.h"
-#include "GraphicsManager.h"
-#include "../objects/Player.h"
 #include "../harlequin/DialogManager.hpp"
 #include "../harlequin/ScriptManager.h"
+#include "../objects/Character.h"
+#include "../objects/Player.h"
+#include "GraphicsManager.h"
+#include "TimeManager.h"
+#include <string>
+#include <vector>
 /**
  * A singleton class, GameManager has only one active instance at any given time.
  */
-class GameManager
-{
-private:
+class GameManager {
+  private:
     std::vector<Character> characters;
     TimeManager timeManager;
     GraphicsManager graphicsManager;
@@ -42,10 +41,6 @@ private:
      * Stub method to load the first scene for the first Milestone test.
      */
     void loadFirstScene();
-    /**
-     * Show the splash screen.
-     */
-    void showSplashScreen();
     /**
      * Handle the key presses by the user.
      */
@@ -73,7 +68,11 @@ private:
      */
     GameManager();
 
-public:
+  public:
+    /**
+     * Show the splash screen.
+     */
+    void showSplashScreen();
     bool quit;
     /**
      * Main loop of the game.
