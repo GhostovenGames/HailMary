@@ -6,7 +6,7 @@
 #ifdef DEBUG
 #include <iostream>
 #endif
-#include "../trefusisInternals/TrefusisConfig.hpp"
+#include "TrefusisConfig.hpp"
 
 ScriptManager::ScriptManager() {
     PyImport_AppendInittab("harlequin", &PyInit_harlequin);

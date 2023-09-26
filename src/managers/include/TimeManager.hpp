@@ -2,10 +2,10 @@
 // Created by elsa on 13.04.2020.
 //
 
-#ifndef TREFUSISENGINE_TIMEMANAGER_HPP
-#define TREFUSISENGINE_TIMEMANAGER_HPP
+#ifndef HAILMARY_TIMEMANAGER_HPP
+#define HAILMARY_TIMEMANAGER_HPP
 
-#include "../trefusisInternals/TrefusisConfig.hpp"
+#include "TrefusisConfig.hpp"
 #include <math.h>
 
 class TimeManager {
@@ -38,4 +38,4 @@ class TimeManager {
     static void transitionDayNight();
 };
 
-#endif // TREFUSISENGINE_TIMEMANAGER_HPP
+#endif // HAILMARY_TIMEMANAGER_HPP

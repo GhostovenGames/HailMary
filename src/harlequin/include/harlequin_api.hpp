@@ -1,8 +1,8 @@
-#ifndef TREFUSISENGINE_HARLEQUIN_HPP
-#define TREFUSISENGINE_HARLEQUIN_HPP
+#ifndef HAILMARY_HARLEQUIN_HPP
+#define HAILMARY_HARLEQUIN_HPP
 
 #include "DialogManager.hpp"
-#include <Python.h>
+#include "Python.h"
 
 PyObject *harlequin_add_dialog(PyObject *self, PyObject *args);
 static PyMethodDef harlequinMethods[] = {

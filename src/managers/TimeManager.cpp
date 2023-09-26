@@ -3,7 +3,7 @@
 //
 
 #include "TimeManager.hpp"
-#include "../trefusisInternals/TrefusisConfig.hpp"
+#include "TrefusisConfig.hpp"
 #include <iostream>
 int TimeManager::tick = 0;
 int TimeManager::timeConstant = 0;

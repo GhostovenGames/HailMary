@@ -3,9 +3,9 @@
 //
 
 #include "GameManager.hpp"
-#include "../objects/Character.hpp"
-#include "../trefusisInternals/TrefusisConfig.hpp"
+#include "Character.hpp"
 #include "Level.hpp"
+#include "TrefusisConfig.hpp"
 #include <iostream>
 
 GameManager *GameManager::game = nullptr;

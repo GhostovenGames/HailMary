@@ -2,8 +2,8 @@
 // Created by elsa on 13.04.2020.
 //
 
-#ifndef TREFUSISENGINE_ACTOR_HPP
-#define TREFUSISENGINE_ACTOR_HPP
+#ifndef HAILMARY_ACTOR_HPP
+#define HAILMARY_ACTOR_HPP
 
 #include "SDL.h"
 
@@ -15,4 +15,4 @@ class Actor {
     virtual SDL_Rect getTexture() = 0;
 };
 
-#endif // TREFUSISENGINE_ACTOR_HPP
+#endif // HAILMARY_ACTOR_HPP

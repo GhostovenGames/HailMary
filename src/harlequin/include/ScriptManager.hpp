@@ -2,10 +2,10 @@
 // Created by elsa on 21.04.2020.
 //
 
-#ifndef TREFUSISENGINE_SCRIPTMANAGER_HPP
-#define TREFUSISENGINE_SCRIPTMANAGER_HPP
+#ifndef HAILMARY_SCRIPTMANAGER_HPP
+#define HAILMARY_SCRIPTMANAGER_HPP
+#include "Python.h"
 #include "harlequin_api.hpp"
-#include <Python.h>
 #include <iostream>
 #include <string>
 
@@ -19,4 +19,4 @@ class ScriptManager {
     void loadScript(std::string fileName);
 };
 
-#endif // TREFUSISENGINE_SCRIPTMANAGER_HPP
+#endif // HAILMARY_SCRIPTMANAGER_HPP

@@ -2,8 +2,8 @@
 // Created by elsa on 13.04.2020.
 //
 
-#ifndef TREFUSISENGINE_CHARACTER_HPP
-#define TREFUSISENGINE_CHARACTER_HPP
+#ifndef HAILMARY_CHARACTER_HPP
+#define HAILMARY_CHARACTER_HPP
 
 class Character {
   private:
@@ -18,4 +18,4 @@ class Character {
     Character(float baseSpeed, float baseHealth);
 };
 
-#endif // TREFUSISENGINE_CHARACTER_HPP
+#endif // HAILMARY_CHARACTER_HPP

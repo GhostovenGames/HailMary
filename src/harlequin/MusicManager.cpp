@@ -3,7 +3,7 @@
 //
 
 #include "MusicManager.hpp"
-#include "../trefusisInternals/TrefusisConfig.hpp"
+#include "TrefusisConfig.hpp"
 #include <filesystem>
 
 /**

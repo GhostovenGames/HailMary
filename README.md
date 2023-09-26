@@ -1,32 +1,40 @@
-# Trefusis Engine - Newcomer Contributors Guide!
+# HailMary
 
-![build](https://github.com/ProjectAras/TrefusisEngine/workflows/build/badge.svg?branch=master)
+HailMary is a minimalistic isometric 2D runtime
 
-Hey you! Finally awake! This is the TrefusisEngine, our small in-house game engine wannabe full of memory leaks and occasional runaway bug that will screetch until it gets you. Since we are in early days of development, not all is settled, but here is what you should do: Install the requirements, DO NOT change the CMakeLists.txt file in the root directory, or if you do, branch the repo so we can test it properly, and just start coding.
+## Project Setup
 
-## Requirments
+### Requirements
 
-### Compile Requirments
+HailMary requires an installation of `python-3.11` and the `meson` build
+system. As well as a functioning C++ compiler that supports C++ 20.
 
-You will need CMake to compile the project, if you will manually compile it, please compile it to its own directory. To do that, open a directory named `build`, enter that directory and then give the `cmake ..` command, this will compile the project inside the `build` directory you just opened, this directory is ignored by `git` so you won't accidently push it to the main. the file to run is named `TrefusisEngine.exe` for windows or just `TrefusisEngine` for \*nix.
+If you are in linux, you'll also need the `python-3.11-dev` package for
+Python development headers.
 
-### SDL Requirments
-
-You will need libsdl, libsdl_ttf and libsdl_image to make the repository compile properly.
-
-### Harlequin Requirments
-
-Harlequin, our inhouse scripting engine currently requires Python. Just make seure your PYTHONPATH is set!
+Any other requirements are handled by the meson itself.
 
 
-## Needs! Styles! Standards!
+### Setup
 
-Here in ProjectAras we adhere to a strict st-- na, just kidding, if you want a style standard tho, try to use Google's C++ style guide. You don't have to know it, none of us, infact do, but it is nice practice to keep things concise.
+We use `meson` to bootstrap the project, you'll have to create the build
+directory and set the project up.
 
-## DOCUMENTATION
+```bash
+mkdir build
+meson setup build
+```
 
-Please document your code man. Also leave some good messages to the Issue about Documention, we cannot seem to shut that down.
+Then, to compile:
 
-# Note about SDL development
+```bash
+meson compile -C build
+```
 
-We try to keep Harlequin and SDL to their respective compartments, in general, SDL and all graphics code is kept at the `GraphicsManager` and all the Harlequin stuff is kept at `src/harlequin` directory. 
+Initial compilation will also take care the installing of `sdl2` and
+the associated helper libraries.
+
+Once the first compilation is done, Intelisense should kick in VSCode,
+provided you have the extensions installed.
+
+

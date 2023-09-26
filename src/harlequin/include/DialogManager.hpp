@@ -1,5 +1,5 @@
-#ifndef TREFUSISENGINE_DIALOGMANAGER_HPP
-#define TREFUSISENGINE_DIALOGMANAGER_HPP
+#ifndef HAILMARY_DIALOGMANAGER_HPP
+#define HAILMARY_DIALOGMANAGER_HPP
 
 #include <queue>
 #include <string>
@@ -34,4 +34,4 @@ class DialogManager {
     static bool hasNextDialog();
 };
 
-#endif // TREFUSISENGINE_DIALOGMANAGER_HPP
+#endif // HAILMARY_DIALOGMANAGER_HPP

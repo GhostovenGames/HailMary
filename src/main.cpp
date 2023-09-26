@@ -2,9 +2,9 @@
 // Created by elsa on 12.04.2020.
 //
 
-#include "harlequin/DialogManager.hpp"
-#include "managers/GameManager.hpp"
-#include "trefusisInternals/TrefusisConfig.hpp"
+#include "DialogManager.hpp"
+#include "GameManager.hpp"
+#include "TrefusisConfig.hpp"
 #include <iostream>
 #include <stdio.h>
 

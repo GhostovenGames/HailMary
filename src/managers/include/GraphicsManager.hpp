@@ -2,14 +2,13 @@
 // Created by elsa on 13.04.2020.
 //
 
-#ifndef TREFUSISENGINE_GRAPHICSMANAGER_HPP
-#define TREFUSISENGINE_GRAPHICSMANAGER_HPP
+#ifndef HAILMARY_GRAPHICSMANAGER_HPP
+#define HAILMARY_GRAPHICSMANAGER_HPP
 
-#include "../harlequin/DialogManager.hpp"
-#include "../objects/Player.hpp"
+#include "DialogManager.hpp"
 #include "Level.hpp"
+#include "Player.hpp"
 #include "SDL.h"
-#include <SDL_surface.h>
 #include <cmath>
 #include <string>
 #include <tuple>
@@ -144,4 +143,4 @@ class GraphicsManager {
     void close();
 };
 
-#endif // TREFUSISENGINE_GRAPHICSMANAGER_HPP
+#endif // HAILMARY_GRAPHICSMANAGER_HPP

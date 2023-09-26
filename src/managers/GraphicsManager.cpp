@@ -3,15 +3,12 @@
 //
 
 #include "GraphicsManager.hpp"
-#include "../trefusisInternals/TrefusisConfig.hpp"
 #include "Level.hpp"
 #include "SDL.h"
 #include "SDL_image.h"
 #include "SDL_ttf.h"
 #include "TimeManager.hpp"
-#include <SDL_error.h>
-#include <SDL_render.h>
-#include <SDL_surface.h>
+#include "TrefusisConfig.hpp"
 #include <filesystem>
 #include <unordered_map>
 

@@ -2,8 +2,8 @@
 // Created by elsa on 15.04.2020.
 //
 
-#ifndef TREFUSISENGINE_TREFUSISCONFIG_HPP
-#define TREFUSISENGINE_TREFUSISCONFIG_HPP
+#ifndef HAILMARY_TREFUSISCONFIG_HPP
+#define HAILMARY_TREFUSISCONFIG_HPP
 
 #include <string>
 #include <vector>
@@ -45,4 +45,4 @@ class TrefusisConfig {
     static bool initConfig(std::string fileName);
 };
 
-#endif // TREFUSISENGINE_TREFUSISCONFIG_HPP
+#endif // HAILMARY_TREFUSISCONFIG_HPP

@@ -2,14 +2,14 @@
 // Created by elsa on 13.04.2020.
 //
 
-#ifndef TREFUSISENGINE_GAMEMANAGER_HPP
-#define TREFUSISENGINE_GAMEMANAGER_HPP
+#ifndef HAILMARY_GAMEMANAGER_HPP
+#define HAILMARY_GAMEMANAGER_HPP
 
-#include "../harlequin/DialogManager.hpp"
-#include "../harlequin/ScriptManager.hpp"
-#include "../objects/Character.hpp"
-#include "../objects/Player.hpp"
+#include "Character.hpp"
+#include "DialogManager.hpp"
 #include "GraphicsManager.hpp"
+#include "Player.hpp"
+#include "ScriptManager.hpp"
 #include "TimeManager.hpp"
 #include <string>
 #include <vector>
@@ -89,4 +89,4 @@ class GameManager {
     void close();
 };
 
-#endif // TREFUSISENGINE_GAMEMANAGER_HPP
+#endif // HAILMARY_GAMEMANAGER_HPP

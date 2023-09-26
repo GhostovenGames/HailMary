@@ -3,8 +3,8 @@
 //
 
 #include "Level.hpp"
-#include "../trefusisInternals/RandomNumberGenerator.hpp"
-#include "../trefusisInternals/TrefusisConfig.hpp"
+#include "RandomNumberGenerator.hpp"
+#include "TrefusisConfig.hpp"
 #include <langinfo.h>
 
 #ifdef DEBUG
