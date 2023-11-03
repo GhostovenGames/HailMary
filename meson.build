@@ -12,7 +12,7 @@ sdl2_image_dep = dependency('sdl2_image')
 sdl2_ttf_dep = dependency('sdl2_ttf')
 
 pymod = import('python')
-python = pymod.find_installation('python3.11')
+python = pymod.find_installation('python3')
 python_dep = python.dependency(embed: true)
 
 # Actually compile and link the modules
