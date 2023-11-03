@@ -15,8 +15,7 @@ jobs:
       - name: Update VM
         run: sudo add-apt-repository universe && sudo apt update
       - name: Install dependencies
-        run: sudo apt-get install python3 python3-pip python3-setuptools \
-          python3-wheel ninja-build
+        run: sudo apt-get install python3 python3-pip python3-setuptools python3-wheel ninja-build
       - name: Install meson
         run: pip3 install meson
       - name: Setup Meson
