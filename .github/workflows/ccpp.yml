@@ -19,6 +19,6 @@ jobs:
       - name: Install meson
         run: pip3 install meson
       - name: Setup Meson
-        run: meson setup builddir && cd builddir
+        run: meson setup builddir
       - name: Compile
-        run: meson compile
+        run: meson compile -C builddir
