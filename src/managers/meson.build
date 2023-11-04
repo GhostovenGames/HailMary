@@ -3,6 +3,8 @@ managers_files = files([
     'GraphicsManager.cpp',
     'Level.cpp',
     'SaveManager.cpp',
-    'TimeManager.cpp'
+    'TimeManager.cpp',
+    'Texture.cpp',
+    'Globals.cpp'
 ])
 managers_includes = include_directories('include')

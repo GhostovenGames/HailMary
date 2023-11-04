@@ -1,4 +1,11 @@
 ---
 BasedOnStyle: LLVM
 IndentWidth: 4
-ColumnLimit: 120
+ColumnLimit: 80
+SeparateDefinitionBlocks: Always
+EmptyLineBeforeAccessModifier: LogicalBlock
+AlignAfterOpenBracket: Align
+BreakBeforeBraces: Attach
+BinPackArguments: false
+BinPackParameters: false
+AllowShortBlocksOnASingleLine: false
